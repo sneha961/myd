@@ -1,0 +1,21 @@
+<html>
+<body>
+<script >
+function gen(n)
+{
+	avg=0;
+	document.write("The random numbers generated are :");
+	for(i=0;i<n;i++)
+	{
+		var r= Math.floor(Math.random() * 50);
+		document.write(r+" ");
+		avg=avg+r;   
+	}
+	document.write("The avg is "+avg/n);
+}
+
+n=prompt("Enter the number of random numbers to be generated");
+gen(n);
+</script>
+</body>
+</html>
